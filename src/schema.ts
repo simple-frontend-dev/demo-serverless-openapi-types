@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 import { createDocument } from "zod-openapi";
 
 export const helloWorldQuerySchema = z.object({
