@@ -1,0 +1,15 @@
+{
+  "extends": ["@tsconfig/node-lts/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
+  "compilerOptions": {
+    "rootDir": ".",
+    "moduleDetection": "force",
+    "verbatimModuleSyntax": true,
+    "rewriteRelativeImportExtensions": true,
+    "erasableSyntaxOnly": true,
+    "types": ["node"],
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["./api/**/*.ts", "./src/**/*.ts"]
+}

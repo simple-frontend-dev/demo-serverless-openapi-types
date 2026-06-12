@@ -1,0 +1,30 @@
+{
+  "name": "demo-serverless-openapi-types",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "pnpm types:check && pnpm lint:check && pnpm format:check",
+    "types:check": "tsc --noEmit",
+    "lint:check": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "format:check": "oxfmt --check .",
+    "format:fix": "oxfmt ."
+  },
+  "dependencies": {
+    "@vercel/node": "^5.5.16",
+    "zod": "4.4.3",
+    "zod-openapi": "5.4.6"
+  },
+  "devDependencies": {
+    "@tsconfig/node-lts": "24.0.0",
+    "@tsconfig/strictest": "2.0.5",
+    "@types/node": "24.12.2",
+    "oxfmt": "^0.54.0",
+    "oxlint": "^1.69.0",
+    "typescript": "5.8.2"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
